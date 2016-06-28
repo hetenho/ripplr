@@ -1,5 +1,6 @@
-exports.Ripplr = function() {
-  this.selector = '.btn';
+exports.Ripplr = function(opts) {
+  this.selector = opts.selector || '.btn';
+  this.effectClass = opts.effectClass || 'ripplr';
   attachClickHandlers();
 
   function attachClickHandlers() {
@@ -18,7 +19,7 @@ exports.Ripplr = function() {
         xPos = e.pageX - offset.left,
         yPos = e.pageY - offset.top;
 
-    div.classList.add('ripplr');
+    div.classList.add(this.effectClass);
     div.style.height = el.height;
     div.style.width = el.height;
     div.style.top = yPos - (parseInt(el.offsetHeight)/2);
