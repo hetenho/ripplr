@@ -19,7 +19,7 @@
 * @author http://twitter.com/hetenho
 *
 */
-exports.Ripplr = function(opts) {
+var Ripplr = function(opts) {
   this.selector = opts.selector || '.btn';
   this.effectClass = opts.effectClass || 'ripplr';
 
@@ -52,8 +52,8 @@ exports.Ripplr = function(opts) {
     div.classList.add(this.effectClass);
     div.style.height = el.height;
     div.style.width = el.height;
-    div.style.top = yPos - (parseInt(el.offsetHeight)/2);
-    div.style.left = xPos - (parseInt(el.offsetWidth)/2);
+    div.style.top = e.pageY - offset.top;
+    div.style.left = e.pageX - offset.left;
     el.appendChild(div);
 
     setTimeout(function() {
