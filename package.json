@@ -1,0 +1,27 @@
+{
+  "name": "ripplr",
+  "version": "1.2.0",
+  "description": "A ripple effect module to use with CSS frameworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hetenho/ripplr.git"
+  },
+  "keywords": [
+    "ripple",
+    "ripple",
+    "effect",
+    "animation",
+    "material",
+    "design"
+  ],
+  "author": "hetenho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hetenho/ripplr/issues"
+  },
+  "homepage": "https://github.com/hetenho/ripplr#readme"
+}

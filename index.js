@@ -19,7 +19,7 @@
 * @author http://twitter.com/hetenho
 *
 */
-var Ripplr = function(opts) {
+window.Ripplr = (function(opts) {
   this.selector = opts.selector || '.btn';
   this.effectClass = opts.effectClass || 'ripplr';
 
@@ -72,4 +72,4 @@ var Ripplr = function(opts) {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
   }
-}
+});
